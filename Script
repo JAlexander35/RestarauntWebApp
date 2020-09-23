@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<head>
+<script src="/assets/jquery.js"></script>
+<link href='https://fonts.googleapis.com/css?family=Londrina+Shadow' rel='stylesheet' type='text/css'>
+<style>
+body {
+  font-family: cursive, sans-serif;
+  margin: 0 auto;
+  max-width: 600px;
+  background: url("https://cdn.usarestaurants.info/assets/uploads/7fa7d490320b0c32bb0deab68f1c1005_-united-states-south-carolina-horry-county-myrtle-beach-the-office-an-italian-pub-843-839-9190htm.jpg");
+}
+div {
+  height: 200px;
+  background-size: cover;
+  position: relative;
+  margin: 40px 0 0 0;
+  border-radius: 12px;
+}
+h1 {
+  font-family: 'Londrina Shadow', cursive;
+  text-align: center;
+  font-size: 75px;
+  color: orange;
+  margin: 60px 0 0 0;
+}
+h2 {
+  text-align: center;
+  color: #bbbbbb;
+  margin: 0px 0 70px 0;
+}
+p {
+  color: rgba(255,255,255,1);
+  background: black;
+  background: linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  padding: 10px;
+  line-height: 28px;
+  text-align: justify;
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  height: 30px;
+  transition: height .5s;
+  -webkit-transition: height .5s;
+  -moz-transition: height .5s;
+}
+
+small {
+  opacity: 0;
+}
+
+.show-description p {
+  height: 150px;
+}
+
+.show-description small {
+  opacity: 1;
+}
+
+.first{
+  background-image: url("http://www.italianfoodforever.com/wp-content/uploads/2008/05/tagliata1.jpg");
+  background-position: center;
+}
+.second{
+  background-image: url("https://www.askchefdennis.com/wp-content/uploads/2018/06/spaghetti-and-meatballs-14.jpg");
+  background-position: center;
+}
+.dessert{
+  background-image: url("https://assets.epicurious.com/photos/57ab6cbb25175b383477359f/6:4/w_620%2Ch_413/mascarpone-cheesecake.jpg");
+  background-position: center;
+}
+.price {
+  float: right;
+}
+@media (max-width: 500px) {
+  h1 {
+    font-size: 50px;
+    margin-top: 20px;
+    line-height: 40px;
+  }
+  h2 {
+    font-size: 20px;
+    margin: 20px 0 30px 0;
+  }
+  div {
+    margin: 20px 12px 0 12px;
+  }
+  p {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  small {
+    font-size: 16px;
+  }
+}
+
+</style>
+
+</head>
+
+<body>
+<h1>La Tavola</h1>
+<h2>Neighborhood hub for classic Italian comfort food</h2>
+<div class="first">
+  <p>Pork Tagliata Antipasta <span class="price">14</span><br />
+  <small>A combination of steak with peppary argula accompanied with peach mostarda, spicy greens, and shaved fennel gf</small></p>
+</div>
+
+<div class="second">
+  <p>Spaghetti <span class="price">13</span><br />
+  <small>A traditional pasta dish saturated in basil and hearty marinara sauce with veal meatballs as an optional choice</small></p>
+</div>
+  
+<div class="dessert">
+  <p>Mascarpone Cheesecake <span class="price">8</span><br />
+  <small>Our signature desert selection made with an outlying graham crust and blueberry compote on top for the finish</small></p>
+</div>
+<div>
+  <h2>LA TAVOLA<br>
+992 VIRGINIA AVENUE NE<br>
+ATLANTA, GA 30306<br>
+404.873.5430</h2>
+<script>
+  $('div').on('click', function() {
+      $(this).toggleClass('show-description');
+  });
+</script>
+
+</body>
