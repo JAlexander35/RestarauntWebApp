@@ -6,7 +6,7 @@ Short proof of concept design for web-optimized menu for a restaurant. I program
 
 ## Screenshot
 
-![WebApp Screenshot](https://i.postimg.cc/MGD51vY2/2023-02-19.png)
+![2023-02-19](https://github.com/user-attachments/assets/34e0bec0-c0c8-4720-b4f0-7359c1f5cbd5)
 
 
 ## Description
